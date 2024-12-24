@@ -8,6 +8,9 @@ function Collab(){
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
             <Card title="hello" content="er" img="./collab_projects/collab1.png"/>
             </div>
+                        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <Card title="hello" content="er" img="./collab_projects/collab1.png"/>
+            </div>
         </div>
     );
 };
