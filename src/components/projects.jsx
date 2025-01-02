@@ -11,7 +11,7 @@ function Projects(){
                 <CardP source="https://github.com/GodZilla-7/Ecom_calculator" live="https://ecom-calculator.vercel.app/" title="E-com Calculator" content="An E-com tool that simplifies Selling price and Break even calculations" img="./projects/project2.png"/>
                 <Card source="https://github.com/GodZilla-7/calculator" live="https://calculator-gamma-pearl.vercel.app/" title="Calculator" content="Made a functioning Calculator for learning purpose" img="./projects/project3.png"/>
                 <Card source="https://github.com/GodZilla-7/cloneYT" live="https://clone-yt-phi.vercel.app/" title="YT Clone" content="Made a yt clone for learning purpose" img="./projects/project5.png"/>
-                <Card source="https://github.com/GodZilla-7/3d_game" live="3d-game-tau.vercel.app" title="3D Cube game" content="Made a 3D game using 3JS" img="./projects/project5.png"/>
+                <Card source="https://github.com/GodZilla-7/3d_game" live="https://3d-game-tau.vercel.app/" title="3D Cube game" content="Made a 3D game using 3JS" img="./projects/project6.png"/>
 
 
             </div>
