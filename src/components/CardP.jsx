@@ -4,7 +4,7 @@ function CardP(props) {
         <div className="col items-center">
             <div className="card shadow-sm">
 
-                <div className="card-body text-2xl">{props.title}</div>
+                <div className="card-body font-bold">{props.title}</div>
                 <img src={props.img} />
                 <div className="card-body">
                     <p className="card-text">{props.content}</p>

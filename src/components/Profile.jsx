@@ -12,15 +12,16 @@ function Profile() {
 
   return (
     <div className="flex flex-col items-center px-4 py-3 mt-2 mb-7 text-center border-bottom">
-      <img src="./profile/i.jpeg" alt="Circular Image" className="w-[160px] h-[160px] mb-4 rounded-full overflow-hidden object-cover border-1 border-black" />
-      <div class="display-5 font-medium mb-2 font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+      <img src="./profile/i.png" alt="Circular Image" className="w-[160px] h-[160px] mb-4 rounded-full overflow-hidden object-cover border-1" />
+      <div class="display-5 font-semibold mb-2 font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
       {languages[index]}
 </div>
-      <h1 className="display-6 mb-2">I am Gaurav Shukla</h1>
+      <h1 className="display-6 mb-2 font-bold">I am Gaurav Shukla</h1>
       <div className="col-lg-6 mx-auto">
         <p className="lead mb-7">A second-year CSE student at NIT Bhopal and a passionate web developer, constantly exploring new technologies to create impactful websites.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Download Resume</button>
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3 mb-5"><a target="_blank" href="https://drive.google.com/file/d/1lGvJQfGWsIReMncgV4kiE8JSciQJNuPv/view?pli=1">Download Resume</a>
+        </button>
       </div>
       </div>
     </div>
