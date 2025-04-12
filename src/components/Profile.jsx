@@ -13,7 +13,7 @@ function Profile() {
   return (
     <div className="flex flex-col items-center px-4 py-3 mt-2 mb-7 text-center border-bottom">
       <img src="./profile/i.png" alt="Circular Image" className="w-[160px] h-[160px] mb-4 rounded-full overflow-hidden object-cover border-1" />
-      <div class="display-5 font-semibold mb-2 font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+      <div class="display-5 mb-2 font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
       {languages[index]}
 </div>
       <h1 className="display-6 mb-2 font-bold">I am Gaurav Shukla</h1>

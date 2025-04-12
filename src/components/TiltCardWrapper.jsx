@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { gsap } from "gsap";
 
-function Skillcard(props) {
+const TiltCardWrapper = ({ children }) => {
   const cardRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -13,13 +13,13 @@ function Skillcard(props) {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateY = ((x - centerX) / centerX) * 25;
-    const rotateX = ((centerY - y) / centerY) * 25;
+    const rotateY = ((x - centerX) / centerX) * 5;
+    const rotateX = ((centerY - y) / centerY) * 5;
 
     gsap.to(cardRef.current, {
       rotationY: rotateY,
       rotationX: rotateX,
-      transformPerspective: 1000,
+      scale: 1.05,
       duration: 0.3,
       ease: "power2.out",
     });
@@ -29,6 +29,7 @@ function Skillcard(props) {
     gsap.to(cardRef.current, {
       rotationY: 0,
       rotationX: 0,
+      scale: 1,
       duration: 0.6,
       ease: "power3.out",
     });
@@ -36,24 +37,20 @@ function Skillcard(props) {
 
   return (
     <div
-      className="col"
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ perspective: "1000px" }}
+      className="w-full flex justify-center"
     >
       <div
         ref={cardRef}
-        className="card shadow-sm flex flex-col items-center py-4"
-        style={{ transformStyle: "preserve-3d" }}
+        style={{ transformStyle: "preserve-3d", willChange: "transform" }}
       >
-        <img className="h-20 fit-content" src={props.img} alt={props.title} />
-        <div className="card-body">
-          <p className="card-text">{props.title}</p>
-        </div>
+        {children}
       </div>
     </div>
   );
-}
+};
 
-export default Skillcard;
+export default TiltCardWrapper;
