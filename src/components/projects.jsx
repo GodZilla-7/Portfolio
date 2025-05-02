@@ -13,6 +13,13 @@ function Projects(){
   content="An e-commerce website offering a stylish collection of female wear with a seamless shopping experience." 
   img="./projects/project0.png"
 />
+ <Card 
+  source="https://github.com/GodZilla-7/Studify" 
+  live="https://studify-chi.vercel.app/" 
+  title="Studify" 
+  content="Studify is a platform helping engineering students with organized resources, smart note-taking, progress tracking, and efficient revision." 
+  img="./projects/project8.png"
+/>
 
 <Card 
   source="https://github.com/GodZilla-7/TaskFlow_backend" 
